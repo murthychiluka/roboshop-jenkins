@@ -10,7 +10,7 @@ terraform {
 
 
 provider "jenkins" {
-  server_url = "https://172.31.8.9:8080"
+  server_url = "http://172.31.8.9:8080"
   username   = "aws_ssm_parameter.jenkins_user.value"
   password   = "aws_ssm_parameter.jenkins_pass.value"
 
