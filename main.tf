@@ -1,11 +1,11 @@
 resource "jenkins_folder" "folders" {
-  name = "infrastructure"
+  name = "infra"
 }
 
 resource "jenkins_job" "job" {
-  name   = "example"
+  name   = "roboshop"
   folder = jenkins_folder.folders.id
-  template = templatefile("${path.module}/job.xml", {
-    description = "An example job created from Terraform"
+  template = templatefile("${path.module}/sb-job.xml", {
+    description = ""
   })
 }
