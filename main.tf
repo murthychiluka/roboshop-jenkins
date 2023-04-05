@@ -18,3 +18,16 @@ resource "jenkins_job" "job" {
     ignore_changes = [template]
   }
 }
+
+
+data "aws_instance" "jenkins" {
+  instance_id = "i-00ddd49f17d8a482d"
+}
+
+resource "aws_route53_record" "jenkins" {
+  zone_id = "Z08295911TJBO1YG96BEC"
+  name    = "jenkins.murthychiluka.online"
+  type    = "A"
+  ttl     = 30
+  records = [data.aws_instance.jenkins.public_ip]
+}
