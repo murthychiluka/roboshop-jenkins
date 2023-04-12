@@ -27,7 +27,7 @@
         <data>
             <jenkins.branch.BranchSource>
                 <source class="org.jenkinsci.plugins.github_branch_source.GitHubSCMSource" plugin="github-branch-source@1703.vd5a_2b_29c6cdc">
-                    <id>04a92b4e-d607-48b7-b613-5dc0af3cb5aa</id>
+                    <id>1ab5fc0a-ce11-4b32-9d52-1c7c7e8ced1d</id>
                     <apiUri>https://api.github.com</apiUri>
                     <credentialsId>GitHub</credentialsId>
                     <repoOwner>murthychiluka</repoOwner>
