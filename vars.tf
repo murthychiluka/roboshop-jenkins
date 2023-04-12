@@ -12,7 +12,7 @@ variable "s-jobs" {
 
 variable "m-jobs" {
   default = [
-    { name = "roboshop", folder = "infra", repo_url = "https://github.com/murthychiluka/roboshop.infra" },
+    
     { name = "frontend", folder = "CI-Pipeline", repo_url = "https://github.com/murthychiluka/frontend" },
     { name = "cart", folder = "CI-Pipeline", repo_url = "https://github.com/murthychiluka/cart" },
     { name = "catalogue", folder = "CI-Pipeline", repo_url = "https://github.com/murthychiluka/catalogue" },
@@ -22,3 +22,8 @@ variable "m-jobs" {
 
   ]
 }
+
+variable "force" {
+  default = false
+}
+
