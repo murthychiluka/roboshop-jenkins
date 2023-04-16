@@ -32,7 +32,7 @@ resource "jenkins_job" "m-job" {
 
   template = templatefile("${path.module}/mb-job.xml", {
     repo_url = lookup(element(var.m-jobs, count.index), "repo_url", null)
-    name     = lookup(element(var.m-jobs, count.index), "name", null)
+    filename     = lookup(element(var.m-jobs, count.index), "filename", null)
 
   })
 
