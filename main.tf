@@ -55,4 +55,5 @@ resource "aws_route53_record" "jenkins" {
   type    = "A"
   ttl     = 30
   records = [data.aws_instance.jenkins.public_ip]
+  
 }
