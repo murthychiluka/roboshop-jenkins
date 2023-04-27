@@ -6,7 +6,8 @@ variable "folders" {
 variable "s-jobs" {
   default = [
     { name = "roboshop", folder = "infra", repo_url = "https://github.com/murthychiluka/roboshop-infra", filename = "Jenkinsfile" },
-    { name = "App-Deployment", folder = "Infra", repo_url = "https://github.com/murthychiluka/roboshop-ansible", filename = "Jenkinsfile-deployment" }
+    { name = "App-Deployment", folder = "Infra", repo_url = "https://github.com/murthychiluka/roboshop-ansible", filename = "Jenkinsfile-deployment" },
+    { name = "Helm-Deployment", folder = "Infra", repo_url = "https://github.com/murthychiluka/roboshop-helm-chart", filename = "Jenkinsfile" }
 
   ]
 }
@@ -21,6 +22,7 @@ variable "m-jobs" {
     { name = "shipping", folder = "CI-Pipeline", repo_url = "https://github.com/murthychiluka/shipping" },
     { name = "payment", folder = "CI-Pipeline", repo_url = "https://github.com/murthychiluka/payment" },
     { name = "aws-ssm-param-store", folder = "CI-Pipeline", repo_url = "https://github.com/murthychiluka/aws-ssm-param-store" }
+
 
   ]
 }
